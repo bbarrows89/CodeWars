@@ -7,7 +7,7 @@ digits in descending order, returning the largest possible integer from the give
 
 function descendingOrder(n) {
 // convert number to string, split each digit, sort ascending, reverse array, join digits
-  let string = n.toString().split('').sort().reverse().join('');
+  let processed = n.toString();
   let arr = string.split('');
   let sorted = arr.sort();
   let descend = sort.reverse();
